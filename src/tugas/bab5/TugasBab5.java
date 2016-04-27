@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Labkomdas {
 final int a = 100000;
 final int b = 125000;
@@ -34,3 +35,35 @@ System.out.println("Jadi total harga yang wajib dibayar : " + total);
 }
 }
 }
+
+class MainLabkomdas {
+public static void main(String args[]) {
+int x,pilihan;
+Labkomdas lk = new Labkomdas();
+Scanner input = new Scanner(System.in);
+System.out.println("CV. Labkomdas");
+System.out.println("=============");
+System.out.println("Anda ingin membeli jaket? A(1)/B(2)/C(3)");
+System.out.print("pilihan : ");
+pilihan = input.nextInt();
+if (pilihan == 1){
+System.out.print("Anda ingin membeli jaket sebanyak? ");
+x = input.nextInt();
+lk.hargaA(x);
+}
+else if (pilihan == 2){
+System.out.print("Anda ingin membeli jaket sebanyak? ");
+x = input.nextInt();
+lk.hargaB(x);
+}
+else if (pilihan == 3){
+System.out.print("Anda ingin membeli jaket sebanyak? ");
+x = input.nextInt();
+lk.hargaC(x);
+}
+else{
+System.out.print("Jaket yang mau anda beli tidak diproduksi!");
+}
+}
+}
+
