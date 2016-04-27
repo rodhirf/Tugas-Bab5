@@ -22,3 +22,23 @@ public static void hitungPenjumlahan(int a, int b) {
         System.out.println("Hasil Pembagiannya Adalah = " + nilai);
     }
 
+public void Sederhana(int a, int b) {
+        m = (a > b) ? a : b;
+        n = (a > b) ? b : a;
+        do {
+            r = m % n;
+            if (r == 0) {
+                gcd = n;
+            } else {
+                m = n;
+                n = r;
+            }
+        } while (r != 0);
+        atas = a / gcd;
+        bawah = b / gcd;
+        System.out.println("Hasil = " + atas + "/" + bawah);
+    }
+
+}
+
+
